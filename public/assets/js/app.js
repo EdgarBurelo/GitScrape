@@ -21,8 +21,6 @@ $(document).ready(()=>{
             location.reload();
             console.log("algo");
         });
-        
-        
     });
 });
 
