@@ -1,5 +1,13 @@
 
 {{#each this}}
-<h5>{{title}}</h5>
-<br>
+    <div class="card">
+        <div class="card-body">
+            <h3>{{title}}</h3>
+            <a href={{link}} class="card-link">Link to "El Deforma"</a>
+        </div>
+        <div class="bot123">
+            <button id={{_id}} class="btn btn-primary btn-comgo">Comment</button>
+        </div>
+    </div>
+    
 {{/each}}

@@ -3,6 +3,7 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
 const articleSchema = new Schema({
+    _id: Schema.Types.ObjectId,
     title: {
         type: String,
         required:true
@@ -11,9 +12,9 @@ const articleSchema = new Schema({
         type:String,
         required:true
     },
-    note: {
+    comment: {
         type: Schema.Types.ObjectId,
-        ref: "Note"
+        ref: "Comment"
     }
 });
 

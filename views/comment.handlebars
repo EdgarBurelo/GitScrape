@@ -1,0 +1,43 @@
+<div class="card">
+    <div class="card-body">
+        <h3>{{title}}</h3>
+        <hr>
+        <div>
+            <h4>Comments:</h4>
+            <h5>{{comment.title}}</h5>
+            <span>{{comment.body}}</span>
+            
+        </div>
+    </div>
+</div>
+
+<div class="card">
+    <div class="card-body">
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text">Title</span>
+            </div>
+            <input type="text" class="form-control" id="commentTitleH">
+        </div>
+
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text">Author</span>
+            </div>
+            <input type="text" class="form-control" id="commentAuthH">
+        </div>
+
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <span class="input-group-text">Comment</span>
+            </div>
+            <textarea class="form-control" id="commentTextH"></textarea>
+        </div>
+        
+        
+    </div>
+    <div class="bot123">
+        <button class="btn btn-success cmt-btn" id={{_id}}>Comment</button>
+    </div>
+
+</div>
